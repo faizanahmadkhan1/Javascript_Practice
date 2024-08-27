@@ -35,4 +35,14 @@ console.log("Some elements > 30",array.some(elem => elem > 30));
 //~* Find the first element passing the condition
 console.log("first element > 20",array.find(elem => elem > 20));
 
+//~* Find the elements which are odd 
+console.log("odd elements", array.filter(elem=>elem%2==1));
+
+//~*  Map- Transform elements of an array into a new array
+
+//% Double every element in the array 
+var doubleArray= array.map(elem=>elem*2);
+console.log("double array", doubleArray);
+
+
 
