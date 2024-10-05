@@ -1,4 +1,4 @@
-var array =[11,23,36]
+var array =[11,23,36];
 console.log("array", array);
 
 //~* Higher order Function (HoF)
@@ -44,5 +44,33 @@ console.log("odd elements", array.filter(elem=>elem%2==1));
 var doubleArray= array.map(elem=>elem*2);
 console.log("double array", doubleArray);
 
+//% Transform language array into objects
+var languages = ["Java","Javascript","Python"];
+var obj= languages.map(lang => ({language:lang, length:lang.length}));
+console.log("obj",obj);
+//~^ Reduce all elements of an array to single value 
+
+var sum=array.reduce((accumulator,elem) => accumulator + elem);
+console.log("sum",sum);
+
+//^ Reduce can take only initial value of accumulator
+
+var expenses =[
+    {txn:1, desc:"Swiggy",amt:250},
+    {txn:2, desc:"Uber",amt:800},
+    {txn:3, desc:"Amazon",amt:1400}
+
+];
+
+console.log("Expenses",expenses);
+
+//! Doesnot work as it tries to add all objects and not amount
+
+var sum =expenses.reduce((accumulator,exp) => accumulator+exp.amt);
+console.log("sum", sum);  // sum [object object]8001400
+
+//^ we can pass initial value as 0 so that it does not add objects 
+var sum =expenses.reduce((accumulator,exp) => accumulator+exp.amt,0);
+console.log("sum", sum);  
 
 
