@@ -1,9 +1,12 @@
+//Understanding closure with example:
+
 //~^ 𝘖𝘶𝘵𝘦𝘳 𝘍𝘶𝘯𝘤𝘵𝘪𝘰𝘯
 function zoo() {
 
 
     //~* Local variables of zoo function 
     var tiger= "zinda hai";
+
     var lion="zaroor marega";
     //~* Inner Function 
     function cage() {
@@ -21,3 +24,6 @@ function zoo() {
     
     //~? we are calling cage but local var of zoo are destroyed 
     pinjara();
+    
+
+    //
