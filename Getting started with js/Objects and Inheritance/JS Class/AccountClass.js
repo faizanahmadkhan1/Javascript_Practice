@@ -30,4 +30,6 @@ console.log(dumaria);
 console.log(dumaria.accountBalance);
 console.log("class", typeof Account);
 
+console.log("new commit");
+
 
