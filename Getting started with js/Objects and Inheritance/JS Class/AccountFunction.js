@@ -29,6 +29,6 @@ console.log("Function", typeof Account);
 
 /*  However programmers of other languages who are used to the concept of class 
 find it difficult to mentally shift to this style of programming so JS decided
-to atleast at the keyword class There are no classes in JS internally
+to atleast add the keyword class There are no classes in JS internally
 but there is a keyword called class  which we look in next example
 AccountClass.js */

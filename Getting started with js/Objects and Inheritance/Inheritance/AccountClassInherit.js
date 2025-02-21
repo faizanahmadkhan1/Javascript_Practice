@@ -42,8 +42,8 @@ class SavingsAccount extends Account {
 
 //^^ Object instantiation
 var dumaria=new Account(2, "Loha Singh",2000 );
-dumaria.deposit(5000);
-dumaria.withdraw(0);
+dumaria.deposit(8000);
+dumaria.withdraw(80);
 console.log(dumaria);
 console.log(dumaria.accountBalance);
 console.log("class", typeof Account);
