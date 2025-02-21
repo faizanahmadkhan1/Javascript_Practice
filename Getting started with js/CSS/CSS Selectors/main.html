@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CSS Selectors</title>
+
+<style>
+    /*Regular selector*/
+     h1{color: green;}
+    /*Combinator  selector*/
+    div > h6 {color: pink;}
+    /*Attribute  selector*/
+   input[name=password] {background-color: gold;}
+    /*Pseudo  selector*/
+    h3:first-child {color: red;}
+</style>
+</head>
+
+<body>
+    
+<h1 id="welcome">Welcome</h1>
+<div>
+    <h3>Login Panel</h3>
+    <p class="label">Username</p>
+    <input name="Username"/>
+    <p>Password</p>
+    <input class="label" name="password"/>
+    
+    <h6>Copyright,2025</h6>
+</div>
+<h6>Company info </h6>
+
+<script>
+    const h1=document.getElementById("welcome");
+    console.log("h1",h1);
+
+    const h1qs=document.querySelector("#welcome");
+    console.log("h1qs",h1qs);
+
+    const labels=document.getElementsByClassName("label");
+    console.log("labels",labels);
+
+    const labelsqs=document.querySelectorAll(".label")
+    console.log("labelsqs",labelsqs);
+
+const h3=document.querySelector("h3:first-child");
+console.log("h3",h3);
+
+const h6=document.querySelector("div>h6");
+console.log("h6",h6)
+</script>
+
+</body>
+
+</html>
