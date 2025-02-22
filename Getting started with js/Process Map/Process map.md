@@ -34,3 +34,4 @@ Some high-level languages, such as JavaScript, utilize a form of automatic memor
 Global Area-
 
 Variables declared Globally (outside any function) have Global Scope. Global variables can be accessed from anywhere in a JavaScript program.
+
