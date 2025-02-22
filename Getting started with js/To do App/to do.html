@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To DO app </title>
+</head>
+<body>
+
+    <h1>To DO app</h1>
+
+    <!--Input box for taking input and button to add to list-->
+    <input id="todo-input"/><button id="add-button">Add</button>
+
+    <!-- list to hold to dos -->
+    <h3>List of Todos</h3>
+
+    <ul id="todo-ul">
+        <li>Sample todo</li>
+
+    </ul>
+
+    <script>
+        //Get hold of input, button and list
+        const todoInput=document.querySelector("#todo-input");
+        const todoButton=document.querySelector("#add-button");
+        const todoUL=document.querySelector("#todo-ul");
+ 
+ //wait for to do button to be clicked
+ todoButton.addEventListener("click",()=>{
+    const text = todoInput.value;
+
+    //Create a new LI element
+    const todoLI =document.createElement("li");
+    todoLI.innerHTML=text;
+
+    //Add it to the list
+    todoUL.appendChild(todoLI);
+
+    
+    todoUL.appendChild(todoLI);
+
+    //Clear the input
+    todoInput.value=" ";
+
+
+ });
+ 
+ 
+ </script>
+
+</body>
+</html>
